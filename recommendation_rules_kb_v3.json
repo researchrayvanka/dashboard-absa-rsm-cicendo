@@ -1,0 +1,754 @@
+{
+  "persyaratan": {
+    "dokumen_dan_kelengkapan_berkas": {
+      "keywords": [
+        "persyaratan",
+        "syarat",
+        "ketentuan",
+        "dokumen",
+        "berkas",
+        "kelengkapan",
+        "formulir",
+        "form",
+        "blangko",
+        "administratif",
+        "administrasi",
+        "fotokopi",
+        "fotocopy",
+        "materai",
+        "foto",
+        "melengkapi",
+        "lengkap",
+        "dilengkapi",
+        "ribet",
+        "rumit",
+        "banyak"
+      ],
+      "interpretation": "Ulasan menyoroti kelengkapan atau kejelasan dokumen/berkas administratif (formulir, fotokopi, materai, pas foto) yang harus dibawa/dipenuhi pasien.",
+      "root_cause": [
+        "Daftar dokumen yang wajib dibawa belum dipublikasikan secara jelas sebelum kunjungan.",
+        "Formulir/blangko yang harus diisi dianggap membingungkan atau tidak tersedia contoh pengisiannya."
+      ],
+      "recommendation": [
+        "Membuat checklist dokumen wajib per jenis kunjungan (baru/kontrol/BPJS/umum) dan mempublikasikannya di website & WA blast H-1.",
+        "Menyediakan contoh pengisian formulir dan titik fotokopi/print di area pendaftaran.",
+        "Melatih petugas loket untuk mengecek kelengkapan berkas secara terstandar dan cepat."
+      ],
+      "category": "Administrasi & Persyaratan",
+      "priority": "Medium",
+      "kpi": [
+        "Penurunan keluhan terkait berkas tidak lengkap/tidak sesuai.",
+        "Peningkatan persentase pasien yang lolos verifikasi berkas di percobaan pertama."
+      ]
+    },
+    "kartu_identitas_dan_bpjs_jkn": {
+      "keywords": [
+        "kartu",
+        "identitas",
+        "ktp",
+        "bpjs",
+        "jkn",
+        "kepesertaan",
+        "nomor",
+        "aktivasi",
+        "password",
+        "reset",
+        "peserta",
+        "iuran",
+        "nonaktif",
+        "ganti",
+        "daftar",
+        "rekam",
+        "medis",
+        "mobile"
+      ],
+      "interpretation": "Ulasan menyoroti kendala terkait kartu identitas/kepesertaan (KTP, kartu BPJS/JKN) dan proses aktivasi/akses akun JKN Mobile.",
+      "root_cause": [
+        "Pasien kesulitan mengakses/reset akun Mobile JKN sebelum berkunjung.",
+        "Data kartu identitas/kepesertaan tidak sinkron dengan sistem rumah sakit (nomor RM, nomor anggota berbeda)."
+      ],
+      "recommendation": [
+        "Menyediakan petugas/help desk khusus BPJS-JKN untuk membantu aktivasi & reset password Mobile JKN di lokasi.",
+        "Melakukan sinkronisasi berkala data kepesertaan dengan sistem BPJS untuk mengurangi selisih data.",
+        "Membuat panduan singkat (poster/video) cara aktivasi Mobile JKN sebelum ke rumah sakit."
+      ],
+      "category": "Administrasi & Persyaratan",
+      "priority": "Medium",
+      "kpi": [
+        "Penurunan kasus gagal verifikasi kartu BPJS/JKN.",
+        "Penurunan waktu penyelesaian kendala aktivasi akun JKN di loket."
+      ]
+    },
+    "surat_dan_rujukan": {
+      "keywords": [
+        "surat",
+        "rujukan",
+        "kontrol",
+        "pengantar",
+        "keterangan",
+        "persetujuan",
+        "izin",
+        "rekomendasi",
+        "faskes",
+        "dirujuk",
+        "kadaluarsa",
+        "expired",
+        "luar"
+      ],
+      "interpretation": "Ulasan menyoroti kejelasan atau proses penerbitan surat rujukan, surat kontrol, dan dokumen rujukan lintas fasilitas kesehatan (faskes 1/2).",
+      "root_cause": [
+        "Alur rujukan berjenjang antar-faskes belum dipahami pasien sehingga sering dianggap berbelit.",
+        "Penerbitan surat rujukan/kontrol dari faskes perujuk kadang terlambat atau tidak sesuai jadwal kunjungan pasien."
+      ],
+      "recommendation": [
+        "Membuat panduan visual alur rujukan berjenjang (faskes 1 -> faskes 2/RS) yang mudah dipahami awam.",
+        "Berkoordinasi dengan faskes primer/BPJS untuk mempercepat penerbitan surat rujukan/rujukan balik.",
+        "Menyediakan layanan konsultasi cepat bagi pasien yang surat rujukannya bermasalah/kadaluarsa."
+      ],
+      "category": "Administrasi & Persyaratan",
+      "priority": "Medium",
+      "kpi": [
+        "Penurunan keluhan terkait surat rujukan/kontrol.",
+        "Peningkatan persentase pasien BPJS dengan rujukan valid saat kedatangan."
+      ]
+    }
+  },
+  "sistem_mekanisme_prosedur": {
+    "pendaftaran_dan_registrasi": {
+      "keywords": [
+        "pendaftaran",
+        "daftar",
+        "registrasi",
+        "online",
+        "manual",
+        "website",
+        "aplikasi",
+        "admission",
+        "verifikasi",
+        "slot",
+        "kuota",
+        "error",
+        "eror",
+        "down",
+        "gagal",
+        "susah",
+        "ribet"
+      ],
+      "interpretation": "Ulasan menyoroti kemudahan/kesulitan proses pendaftaran, baik online (website/WA/aplikasi) maupun manual/langsung di tempat.",
+      "root_cause": [
+        "Kanal pendaftaran online (website/Mobile JKN/WA) sering gagal diakses atau kuota H-3 cepat penuh.",
+        "Proses registrasi ulang/verifikasi di admission center memakan waktu karena pengecekan manual."
+      ],
+      "recommendation": [
+        "Meningkatkan kapasitas dan stabilitas kanal pendaftaran online, termasuk slot kuota per poli.",
+        "Menyediakan alternatif kanal pendaftaran (WA resmi) bagi pasien yang kurang familiar dengan aplikasi.",
+        "Mendigitalisasi proses verifikasi ulang di admission center agar lebih cepat."
+      ],
+      "category": "Proses & Prosedur",
+      "priority": "High",
+      "kpi": [
+        "Peningkatan tingkat keberhasilan pendaftaran online tanpa kendala teknis.",
+        "Penurunan waktu proses registrasi/verifikasi di admission center."
+      ]
+    },
+    "sistem_antrian_dan_loket": {
+      "keywords": [
+        "antrian",
+        "antri",
+        "ngantri",
+        "nomor",
+        "tiket",
+        "loket",
+        "dipanggil",
+        "pemanggilan",
+        "urutan",
+        "terlewat",
+        "estimasi",
+        "mesin",
+        "panjang",
+        "numpuk"
+      ],
+      "interpretation": "Ulasan menyoroti keakuratan sistem antrian (nomor/tiket, estimasi kedatangan) dan pelayanan di loket.",
+      "root_cause": [
+        "Sistem antrian online dan manual tidak sinkron sehingga nomor urut atau pasien terlewat pemanggilan.",
+        "Estimasi waktu kedatangan/antrian yang ditampilkan tidak akurat dibanding kenyataan di lapangan."
+      ],
+      "recommendation": [
+        "Mengintegrasikan sistem antrian digital dan manual dalam satu database real-time per loket/poli.",
+        "Mengkalibrasi ulang perhitungan estimasi kedatangan berdasarkan data historis beban pasien.",
+        "Menambah papan/layar informasi status antrian yang mudah terlihat di setiap loket."
+      ],
+      "category": "Proses & Prosedur",
+      "priority": "High",
+      "kpi": [
+        "Penurunan kasus nomor antrian terlewat.",
+        "Peningkatan akurasi estimasi waktu antrian dibanding realisasi."
+      ]
+    },
+    "kejelasan_prosedur_dan_birokrasi": {
+      "keywords": [
+        "prosedur",
+        "sistem",
+        "mekanisme",
+        "alur",
+        "birokrasi",
+        "sop",
+        "aturan",
+        "kebijakan",
+        "ribet",
+        "berbelit",
+        "rumit",
+        "dipersulit",
+        "muter",
+        "bolak",
+        "balik",
+        "ngaco",
+        "berubah",
+        "kurang",
+        "bingung",
+        "tidak",
+        "jelas"
+      ],
+      "interpretation": "Ulasan menyoroti kejelasan SOP/aturan pelayanan serta persepsi prosedur yang dianggap berbelit, berubah-ubah, atau sulit dipahami.",
+      "root_cause": [
+        "SOP/kebijakan pelayanan berubah tanpa sosialisasi memadai ke pasien maupun petugas lini depan.",
+        "Minimnya papan petunjuk/penanda arah membuat pasien kesulitan memahami alur fisik pelayanan."
+      ],
+      "recommendation": [
+        "Mendokumentasikan dan mensosialisasikan SOP alur pelayanan secara konsisten ke seluruh unit dan pasien.",
+        "Memasang papan petunjuk arah dan informasi alur yang jelas di titik-titik strategis rumah sakit.",
+        "Membentuk kanal informasi cepat (pengumuman) setiap ada perubahan kebijakan/prosedur."
+      ],
+      "category": "Proses & Prosedur",
+      "priority": "High",
+      "kpi": [
+        "Penurunan keluhan terkait prosedur yang berbelit/tidak jelas.",
+        "Peningkatan skor kepuasan dimensi sistem/mekanisme/prosedur."
+      ]
+    }
+  },
+  "waktu_penyelesaian": {
+    "waktu_tunggu_dan_antrian": {
+      "keywords": [
+        "lama",
+        "lambat",
+        "lelet",
+        "nunggu",
+        "menunggu",
+        "tunggu",
+        "antri",
+        "ngantri",
+        "antrian",
+        "molor",
+        "ngaret",
+        "telat",
+        "seharian",
+        "berjam",
+        "panjang",
+        "kelamaan"
+      ],
+      "interpretation": "Ulasan menyoroti lamanya waktu tunggu pada tahap pendaftaran, antrian, pemeriksaan dokter, maupun pengambilan obat/hasil.",
+      "root_cause": [
+        "Volume pasien melebihi kapasitas loket/poli pada jam-jam sibuk (pagi hari).",
+        "Tidak ada informasi estimasi waktu tunggu yang transparan bagi pasien di ruang tunggu."
+      ],
+      "recommendation": [
+        "Menambah loket/petugas pada jam sibuk berdasarkan data historis kepadatan pasien.",
+        "Menampilkan estimasi waktu tunggu secara real-time di layar/papan ruang tunggu.",
+        "Menerapkan sistem antrean digital khusus farmasi dengan estimasi waktu pengambilan obat."
+      ],
+      "category": "Efisiensi Layanan",
+      "priority": "High",
+      "kpi": [
+        "Penurunan rata-rata waktu tunggu pendaftaran, antrian, dan farmasi.",
+        "Peningkatan akurasi estimasi waktu tunggu yang diinformasikan ke pasien."
+      ]
+    },
+    "keterlambatan_dokter_dan_penundaan": {
+      "keywords": [
+        "dokternya",
+        "dokter",
+        "telat",
+        "terlambat",
+        "molor",
+        "penundaan",
+        "ditunda",
+        "diundur",
+        "dibiarin",
+        "observasi",
+        "parah",
+        "kesabaran",
+        "hrus",
+        "jadwal"
+      ],
+      "interpretation": "Ulasan menyoroti keterlambatan kedatangan dokter atau penundaan/penjadwalan ulang tindakan tanpa kepastian waktu.",
+      "root_cause": [
+        "Dokter datang terlambat dari jadwal praktik tanpa pemberitahuan awal ke pasien yang sudah menunggu.",
+        "Penundaan tindakan tidak disertai kepastian jadwal baru yang dikomunikasikan proaktif ke pasien."
+      ],
+      "recommendation": [
+        "Menerapkan monitoring kehadiran dokter serta SOP/konsekuensi jika terjadi keterlambatan.",
+        "Memberikan notifikasi keterlambatan beserta estimasi waktu baru kepada pasien yang menunggu.",
+        "Menetapkan SOP komunikasi proaktif (kepastian jadwal ulang) setiap kali terjadi penundaan."
+      ],
+      "category": "Efisiensi Layanan",
+      "priority": "High",
+      "kpi": [
+        "Peningkatan persentase kepatuhan jadwal praktik dokter.",
+        "Penurunan keluhan terkait dokter terlambat/penundaan tindakan."
+      ]
+    }
+  },
+  "biaya_tarif": {
+    "transparansi_tarif_dan_harga": {
+      "keywords": [
+        "biaya",
+        "tarif",
+        "harga",
+        "ongkos",
+        "mahal",
+        "mahalnya",
+        "bayar",
+        "charge",
+        "kena",
+        "pungli",
+        "pungutan",
+        "transparan",
+        "murah",
+        "gratis",
+        "terjangkau",
+        "tertipu",
+        "diperas"
+      ],
+      "interpretation": "Ulasan menyoroti transparansi dan kewajaran informasi tarif/harga layanan secara umum.",
+      "root_cause": [
+        "Daftar/komponen tarif tidak dipublikasikan secara jelas sehingga pasien merasa biaya tidak wajar.",
+        "Selisih tagihan antara jaminan (BPJS) dan biaya umum tidak dijelaskan sebelum tindakan."
+      ],
+      "recommendation": [
+        "Menampilkan daftar tarif resmi dan komponen biaya secara transparan di loket kasir & website.",
+        "Menjelaskan estimasi biaya dan cakupan jaminan sebelum tindakan dilakukan.",
+        "Menyediakan simulasi/estimasi biaya mandiri untuk layanan umum."
+      ],
+      "category": "Biaya & Tarif",
+      "priority": "High",
+      "kpi": [
+        "Penurunan keluhan terkait tarif tidak transparan/tidak wajar.",
+        "Peningkatan proporsi pasien yang menerima estimasi biaya sebelum tindakan."
+      ]
+    },
+    "biaya_parkir_dan_penunjang": {
+      "keywords": [
+        "parkir",
+        "parkirnya",
+        "karcis",
+        "portal",
+        "kantin",
+        "atm",
+        "penunjang"
+      ],
+      "interpretation": "Ulasan menyoroti biaya layanan penunjang di luar layanan medis utama, terutama tarif parkir yang dianggap memberatkan.",
+      "root_cause": [
+        "Tarif parkir progresif terasa mahal karena durasi kunjungan pasien yang panjang.",
+        "Tidak ada integrasi/keringanan tarif parkir bagi pasien berobat."
+      ],
+      "recommendation": [
+        "Mengintegrasikan tiket parkir dengan nomor pendaftaran agar pasien mendapat tarif flat/keringanan.",
+        "Menampilkan tarif parkir resmi secara jelas di titik masuk untuk mencegah pungutan tidak wajar."
+      ],
+      "category": "Biaya & Tarif",
+      "priority": "Medium",
+      "kpi": [
+        "Penurunan keluhan terkait tarif parkir.",
+        "Peningkatan kepuasan terhadap layanan penunjang."
+      ]
+    }
+  },
+  "produk_spesifikasi_jenis_pelayanan": {
+    "mutu_dan_hasil_layanan": {
+      "keywords": [
+        "hasil",
+        "layanan",
+        "pelayanan",
+        "tindakan",
+        "operasi",
+        "pemeriksaan",
+        "periksa",
+        "diagnosa",
+        "obat",
+        "resep",
+        "sesuai",
+        "salah",
+        "gagal",
+        "sembuh",
+        "kambuh"
+      ],
+      "interpretation": "Ulasan menyoroti mutu dan kesesuaian hasil layanan medis (pemeriksaan, tindakan, operasi, obat) terhadap harapan pasien.",
+      "root_cause": [
+        "Ekspektasi pasien terhadap hasil tindakan tidak dikelola dengan penjelasan yang memadai sejak awal.",
+        "Variasi mutu hasil layanan antar dokter/shift belum terstandar."
+      ],
+      "recommendation": [
+        "Menstandarkan protokol klinis dan mutu hasil layanan lintas dokter/poli.",
+        "Memberikan penjelasan pra-tindakan yang jelas mengenai prosedur, risiko, dan ekspektasi hasil."
+      ],
+      "category": "Produk Layanan",
+      "priority": "Medium",
+      "kpi": [
+        "Penurunan keluhan terkait hasil layanan tidak sesuai.",
+        "Peningkatan skor kepuasan terhadap mutu layanan medis."
+      ]
+    },
+    "layanan_spesialistik_mata": {
+      "keywords": [
+        "mata",
+        "kacamata",
+        "lensa",
+        "katarak",
+        "lasik",
+        "refraksi",
+        "retina",
+        "glaukoma",
+        "operasi"
+      ],
+      "interpretation": "Ulasan menyoroti ketersediaan dan kejelasan layanan spesialistik mata (refraksi, katarak, kacamata/lensa) sebagai layanan inti RS Mata Cicendo.",
+      "root_cause": [
+        "Alur dan estimasi waktu/biaya layanan spesialistik mata belum diinformasikan dengan jelas.",
+        "Kapasitas layanan tindakan mata tertentu terbatas dibanding permintaan."
+      ],
+      "recommendation": [
+        "Memperjelas alur, estimasi waktu, dan biaya tiap layanan spesialistik mata di kanal informasi.",
+        "Mengevaluasi kapasitas slot untuk tindakan mata dengan antrean terpanjang."
+      ],
+      "category": "Produk Layanan",
+      "priority": "Medium",
+      "kpi": [
+        "Penurunan keluhan terkait ketersediaan layanan spesialistik mata.",
+        "Penurunan waktu tunggu tindakan mata elektif."
+      ]
+    }
+  },
+  "kompetensi_pelaksana": {
+    "kompetensi_dan_ketelitian_petugas": {
+      "keywords": [
+        "salah",
+        "keliru",
+        "ngaco",
+        "ragu",
+        "kompeten",
+        "profesional",
+        "teliti",
+        "terampil",
+        "pengalaman",
+        "asal",
+        "kurang",
+        "sesuai"
+      ],
+      "interpretation": "Ulasan menyoroti kompetensi, ketelitian, dan profesionalitas petugas medis/non-medis dalam menjalankan tugasnya.",
+      "root_cause": [
+        "Kesalahan tindakan/input akibat kurangnya ketelitian atau beban kerja tinggi.",
+        "Pelatihan kompetensi berkala belum merata ke seluruh petugas lini depan."
+      ],
+      "recommendation": [
+        "Memperkuat pelatihan dan sertifikasi kompetensi petugas secara berkala.",
+        "Menerapkan double-check pada tindakan/input kritis untuk menekan kesalahan."
+      ],
+      "category": "SDM & Kompetensi",
+      "priority": "Medium",
+      "kpi": [
+        "Penurunan insiden kesalahan tindakan/input oleh petugas.",
+        "Peningkatan cakupan petugas tersertifikasi kompetensi."
+      ]
+    }
+  },
+  "perilaku_pelaksana": {
+    "sikap_dan_keramahan_petugas": {
+      "keywords": [
+        "kasar",
+        "jutek",
+        "judes",
+        "ketus",
+        "galak",
+        "sombong",
+        "cuek",
+        "acuh",
+        "oknum",
+        "nanya",
+        "sinis",
+        "ramah",
+        "sopan",
+        "kurang"
+      ],
+      "interpretation": "Ulasan menyoroti sikap, keramahan, dan etika komunikasi petugas dalam melayani pasien.",
+      "root_cause": [
+        "Petugas tertentu (oknum) bersikap kasar/judes sehingga menurunkan pengalaman pasien.",
+        "Belum ada pelatihan service excellence & kode etik pelayanan yang konsisten."
+      ],
+      "recommendation": [
+        "Memberikan pelatihan service excellence dan etika komunikasi secara berkala.",
+        "Menerapkan kode etik pelayanan dan menindaklanjuti laporan oknum petugas yang bersikap kasar.",
+        "Menyediakan kanal umpan balik cepat terkait sikap petugas."
+      ],
+      "category": "SDM & Perilaku",
+      "priority": "High",
+      "kpi": [
+        "Penurunan keluhan terkait sikap/keramahan petugas.",
+        "Peningkatan skor kepuasan dimensi perilaku pelaksana."
+      ]
+    }
+  },
+  "sarana_prasarana": {
+    "kebersihan_toilet_dan_ruangan": {
+      "keywords": [
+        "toilet",
+        "wc",
+        "kloset",
+        "bau",
+        "kotor",
+        "jorok",
+        "sabun",
+        "air",
+        "bersih",
+        "kumuh"
+      ],
+      "interpretation": "Ulasan menyoroti kebersihan dan kelayakan toilet serta area publik rumah sakit.",
+      "root_cause": [
+        "Frekuensi pembersihan toilet belum sebanding dengan volume pengunjung.",
+        "Ketersediaan air/sabun tidak terpantau rutin."
+      ],
+      "recommendation": [
+        "Meningkatkan frekuensi kebersihan dan perawatan toilet dengan checklist berkala.",
+        "Memastikan ketersediaan air dan sabun serta pengecekan rutin."
+      ],
+      "category": "Sarana & Prasarana",
+      "priority": "Medium",
+      "kpi": [
+        "Penurunan keluhan terkait kebersihan toilet/ruangan.",
+        "Peningkatan skor kebersihan fasilitas."
+      ]
+    },
+    "parkir_dan_keamanan": {
+      "keywords": [
+        "parkir",
+        "lahan",
+        "security",
+        "satpam",
+        "sempit",
+        "penuh",
+        "sesak",
+        "luas",
+        "portal"
+      ],
+      "interpretation": "Ulasan menyoroti kapasitas/keteraturan lahan parkir serta pengaturan oleh petugas keamanan.",
+      "root_cause": [
+        "Kapasitas lahan parkir tidak sebanding dengan jumlah pengunjung pada jam padat.",
+        "Pengaturan lalu lintas parkir oleh petugas belum optimal."
+      ],
+      "recommendation": [
+        "Menata ulang/menambah kapasitas lahan parkir dan jalur sirkulasi.",
+        "Meningkatkan pengaturan parkir oleh petugas keamanan pada jam padat."
+      ],
+      "category": "Sarana & Prasarana",
+      "priority": "Medium",
+      "kpi": [
+        "Penurunan keluhan terkait parkir penuh/sempit.",
+        "Peningkatan kepuasan terhadap akses & keamanan."
+      ]
+    },
+    "ruang_tunggu_dan_fasilitas": {
+      "keywords": [
+        "ruang",
+        "ruangan",
+        "kursi",
+        "ac",
+        "panas",
+        "sempit",
+        "sesak",
+        "gedung",
+        "fasilitas",
+        "lift",
+        "mushola",
+        "wifi",
+        "colokan",
+        "rusak",
+        "ditingkatkan"
+      ],
+      "interpretation": "Ulasan menyoroti kenyamanan ruang tunggu (tempat duduk, suhu/AC) dan kondisi fasilitas penunjang.",
+      "root_cause": [
+        "Kapasitas tempat duduk ruang tunggu tidak cukup pada jam sibuk.",
+        "Fasilitas penunjang (lift, AC, mushola) kurang terawat atau rusak."
+      ],
+      "recommendation": [
+        "Menambah kapasitas tempat duduk dan menjaga suhu/sirkulasi udara ruang tunggu.",
+        "Melakukan perawatan berkala fasilitas penunjang dan segera memperbaiki yang rusak."
+      ],
+      "category": "Sarana & Prasarana",
+      "priority": "Medium",
+      "kpi": [
+        "Penurunan keluhan terkait kenyamanan ruang tunggu.",
+        "Penurunan jumlah fasilitas rusak yang belum tertangani."
+      ]
+    }
+  },
+  "penanganan_pengaduan_saran_masukan": {
+    "responsivitas_pengaduan": {
+      "keywords": [
+        "pengaduan",
+        "komplain",
+        "keluhan",
+        "respon",
+        "direspon",
+        "ditanggapi",
+        "tanggap",
+        "diabaikan",
+        "cuek",
+        "solusi",
+        "lapor",
+        "cs",
+        "masukan",
+        "saran",
+        "nunggu",
+        "kesabaran"
+      ],
+      "interpretation": "Ulasan menyoroti ketersediaan kanal pengaduan dan kecepatan/kualitas tindak lanjut atas keluhan pasien.",
+      "root_cause": [
+        "Kanal pengaduan tidak jelas atau keluhan tidak ditindaklanjuti dengan kepastian.",
+        "Tidak ada SLA respons dan umpan balik penyelesaian ke pelapor."
+      ],
+      "recommendation": [
+        "Menyediakan kanal pengaduan yang jelas (loket/CS/digital) dengan SLA respons.",
+        "Mencatat dan menindaklanjuti setiap keluhan serta memberi umpan balik penyelesaian ke pelapor.",
+        "Menyediakan dashboard pemantauan status pengaduan."
+      ],
+      "category": "Pengaduan & Masukan",
+      "priority": "High",
+      "kpi": [
+        "Penurunan waktu rata-rata respons pengaduan.",
+        "Peningkatan persentase pengaduan yang tuntas ditindaklanjuti."
+      ]
+    }
+  },
+  "empati_komunikasi": {
+    "empati_dan_kejelasan_informasi": {
+      "keywords": [
+        "empati",
+        "dengar",
+        "mendengarkan",
+        "komunikasi",
+        "jelas",
+        "informasi",
+        "info",
+        "penjelasan",
+        "arahkan",
+        "mengarahkan",
+        "bingung",
+        "cuek",
+        "kasar",
+        "jutek",
+        "kurang",
+        "buruk"
+      ],
+      "interpretation": "Ulasan menyoroti empati petugas serta kejelasan informasi/pengarahan yang diberikan kepada pasien.",
+      "root_cause": [
+        "Petugas kurang memberi penjelasan atau pengarahan yang jelas sehingga pasien bingung.",
+        "Komunikasi empatik belum menjadi standar interaksi petugas."
+      ],
+      "recommendation": [
+        "Melatih petugas dalam komunikasi empatik dan pemberian informasi yang jelas.",
+        "Menyediakan petugas pengarah (customer guide) di titik-titik strategis.",
+        "Memastikan setiap pasien mendapat penjelasan yang memadai atas layanannya."
+      ],
+      "category": "Komunikasi & Empati",
+      "priority": "High",
+      "kpi": [
+        "Penurunan keluhan terkait informasi tidak jelas/kurang empati.",
+        "Peningkatan skor kepuasan dimensi empati & komunikasi."
+      ]
+    }
+  },
+  "keandalan_daya_tanggap": {
+    "kesigapan_dan_konsistensi_layanan": {
+      "keywords": [
+        "tanggap",
+        "respon",
+        "sigap",
+        "cekatan",
+        "lambat",
+        "lelet",
+        "telat",
+        "andal",
+        "konsisten",
+        "ngabisin",
+        "cepat",
+        "gercep",
+        "abai",
+        "jutek"
+      ],
+      "interpretation": "Ulasan menyoroti kesigapan petugas dalam merespons kebutuhan pasien serta konsistensi kualitas layanan.",
+      "root_cause": [
+        "Respons petugas terhadap kebutuhan pasien lambat pada jam/kondisi tertentu.",
+        "Kualitas layanan tidak konsisten antar shift/petugas."
+      ],
+      "recommendation": [
+        "Meningkatkan kesigapan petugas dengan standar waktu tanggap yang terukur.",
+        "Menjaga konsistensi kualitas layanan antar shift melalui monitoring & briefing rutin."
+      ],
+      "category": "Keandalan & Daya Tanggap",
+      "priority": "High",
+      "kpi": [
+        "Penurunan keluhan terkait respons lambat/tidak sigap.",
+        "Peningkatan konsistensi skor layanan antar shift."
+      ]
+    }
+  },
+  "generic_sentiment": {
+    "negatif": {
+      "keywords": [
+        "jelek",
+        "buruk",
+        "kurang",
+        "kecewa",
+        "mengecewakan",
+        "parah",
+        "ribet",
+        "ngaco",
+        "gak",
+        "nggak",
+        "payah",
+        "zonk",
+        "bapuk",
+        "ampas",
+        "ancur",
+        "hancur",
+        "nyesel",
+        "kapok",
+        "males",
+        "jengkel",
+        "kesel",
+        "bete"
+      ],
+      "note": "Penanda sentimen negatif lintas-aspek. Untuk konfirmasi label negatif, BUKAN pemicu rekomendasi spesifik."
+    },
+    "positif": {
+      "keywords": [
+        "bagus",
+        "baik",
+        "mantap",
+        "puas",
+        "memuaskan",
+        "ramah",
+        "cepat",
+        "bersih",
+        "nyaman",
+        "rapi",
+        "sopan",
+        "terbantu",
+        "recommended",
+        "top",
+        "oke",
+        "gercep"
+      ],
+      "note": "Penanda sentimen positif lintas-aspek untuk konfirmasi label positif."
+    }
+  }
+}

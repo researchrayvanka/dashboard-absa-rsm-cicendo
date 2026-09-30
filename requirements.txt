@@ -1,0 +1,24 @@
+# --- Core app ---
+streamlit
+pandas
+numpy<2
+
+# --- Charts + export ---
+plotly
+kaleido==0.2.1
+fpdf2
+openpyxl
+XlsxWriter
+
+# --- Model ---
+torch
+transformers
+
+# --- Preprocessing / NLP ---
+deep-translator
+langdetect
+Sastrawi
+
+# --- Interpretability ---
+shap
+scikit-learn
