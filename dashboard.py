@@ -6,7 +6,8 @@ import ast
 import json
 import torch
 import torch.nn as nn
-from transformers import BertTokenizer, BertModel
+from transformers import BertTokenizer, BertModel, BertConfig
+from huggingface_hub import hf_hub_download
 from deep_translator import GoogleTranslator
 from langdetect import detect, LangDetectException
 import shap
@@ -486,7 +487,7 @@ def primary_sentiment(sents):
 class MultiTaskIndoBERT(nn.Module):
     def __init__(self, num_sentiment=3, num_aspect=12, dropout=0.3):
         super().__init__()
-        self.bert = BertModel.from_pretrained('indobenchmark/indobert-base-p1')
+        self.bert = BertModel(BertConfig.from_pretrained('indobenchmark/indobert-base-p1'))
         self.dropout = nn.Dropout(dropout)
         self.sentiment_head = nn.Linear(self.bert.config.hidden_size, num_sentiment)
         self.aspect_head = nn.Linear(self.bert.config.hidden_size, num_aspect)
@@ -500,8 +501,20 @@ class MultiTaskIndoBERT(nn.Module):
 @st.cache_resource
 def load_model():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+    try:
+        token = st.secrets["HF_TOKEN"]  # hanya kepakai kalau repo HF kamu private
+    except Exception:
+        token = None
+
+    model_path = hf_hub_download(
+        repo_id="USERNAME-KAMU/NAMA-REPO-MODEL",   # <-- ganti ini
+        filename="multitask_model_p1_42.pt",       # <-- harus sama dengan nama file di HF
+        token=token,
+    )
+
     model = MultiTaskIndoBERT()
-    model.load_state_dict(torch.load('multitask_model_p1_42.pt', map_location=device))
+    model.load_state_dict(torch.load(model_path, map_location=device))
     model.eval()
     model.to(device)
     tokenizer = BertTokenizer.from_pretrained('indobenchmark/indobert-base-p1')
