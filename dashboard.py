@@ -508,7 +508,7 @@ def load_model():
         token = None
 
     model_path = hf_hub_download(
-        repo_id="USERNAME-KAMU/NAMA-REPO-MODEL",   # <-- ganti ini
+        repo_id="rayvankaazrifany/absarsmcicendo",   # <-- ganti ini
         filename="multitask_model_p1_42.pt",       # <-- harus sama dengan nama file di HF
         token=token,
     )
